@@ -1,47 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muneeb Shoukat - DevOps Engineer & SRE</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="images/profile.jpeg" type="image/png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muneeb Shoukat - DevOps Engineer & SRE</title>
+  <link rel="icon" href="images/profile.jpeg" type="image/png" />
 
-    <!-- Material Icons -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!-- Roboto Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome for icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Chart.js for gauge chart -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="container">
-        <a href="#" class="logo">
-          <div class="logo-icon">
-            <i class="fas fa-terminal"></i>
-          </div>
-          <div class="logo-text">
-            <span>Muneeb Shoukat</span>
-          </div>
-        </a>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="#" class="logo">
+        <div class="logo-icon"><i class="fas fa-terminal"></i></div>
+        <span class="logo-text">Muneeb Shoukat</span>
+      </a>
+
+      <nav class="nav-menu">
         <ul class="nav-links">
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -50,729 +33,505 @@
           <li><a href="#tech-articles" class="nav-link">Articles</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-        <a
-          href="MuneebulRehman.pdf"
-          class="btn btn-primary navbar-resume-btn"
-          download
-          >Download Resume</a
-        >
+      </nav>
+
+      <div class="nav-actions">
+        <a href="MuneebulRehman.pdf" class="btn btn-primary" download>
+          <i class="fas fa-download"></i> Resume
+        </a>
         <button class="burger" aria-label="Toggle navigation">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+          <span></span><span></span><span></span>
         </button>
       </div>
-    </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-      <canvas id="hero-particles"></canvas>
-      <div class="container">
-        <div class="hero-content animate-on-scroll">
-          <h1>
-            <span class="typing-text" style="color: var(--primary-color)"></span
-            ><br /><span class="gradient-text">Cloud-Native Reality</span>
-          </h1>
-          <h2>DevOps Engineer & Site Reliability Expert</h2>
-          <p class="hero-tagline">
-            Architecting scalable solutions where
-            <strong>reliability meets innovation</strong>. Embracing the
-            philosophy of <strong>"Engineer it, Own it, Excel at it"</strong> to
-            build robust cloud infrastructures that drive business success.
-          </p>
-          <div class="cta-buttons">
-            <a href="#projects" class="btn btn-primary">
-              <span class="material-icons">rocket_launch</span>
-              <span>Explore My Work</span>
-            </a>
-            <a href="#contact" class="btn btn-secondary">
-              <span class="material-icons">chat</span>
-              <span>Let's Connect</span>
-            </a>
-          </div>
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <canvas id="hero-particles"></canvas>
+    <div class="container hero-container">
+      
+      <!-- Hero Left Content -->
+      <div class="hero-text">
+        <div class="badge-pill">
+          <span class="pulse-dot"></span>
+          DevOps Engineer & Site Reliability Expert
         </div>
-        <div class="hero-image animate-on-scroll" style="position: relative">
-          <img
-            src="images/profile.jpeg"
-            alt="Muneeb Shoukat"
-            class="profile-image"
-            style="position: relative; z-index: 1"
-          />
-          <div class="profile-placeholder">
-            <i class="fas fa-user-circle"></i>
+        
+        <h1 class="hero-title">
+          <span class="typing-text"></span><br />
+          <span class="gradient-text">Cloud-Native Reality</span>
+        </h1>
+        
+        <p class="hero-description">
+          Architecting scalable solutions where <strong>reliability meets innovation</strong>. Embracing the philosophy of <strong>"Engineer it, Own it, Excel at it"</strong> to build robust cloud infrastructures that drive business success.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary btn-lg">
+            <i class="fas fa-rocket"></i> Explore My Work
+          </a>
+          <a href="#contact" class="btn btn-secondary btn-lg">
+            <i class="fas fa-paper-plane"></i> Let's Connect
+          </a>
+        </div>
+
+        <div class="hero-contact-chips">
+          <a href="mailto:muneebshoukat111@gmail.com" class="chip-item">
+            <i class="fas fa-envelope"></i> muneebshoukat111@gmail.com
+          </a>
+          <a href="tel:+923005373672" class="chip-item">
+            <i class="fas fa-phone"></i> +92-3005373672
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Right Clean Profile Image -->
+      <div class="hero-visual">
+        <div class="portrait-card">
+          <div class="portrait-ring">
+            <img src="images/profile.jpeg" alt="Muneeb Shoukat" class="portrait-img" />
           </div>
         </div>
       </div>
-      <div class="hero-background"></div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about section animate-on-scroll">
-      <div class="container">
+    </div>
+  </section>
+
+  <!-- ENHANCED: About Section & Interactive Console -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">BACKGROUND & PHILOSOPHY</span>
         <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-          <div class="terminal">
-            <div class="terminal-header">
-              <div class="terminal-btn red"></div>
-              <div class="terminal-btn yellow"></div>
-              <div class="terminal-btn green"></div>
+      </div>
+
+      <div class="about-grid">
+        <!-- Interactive Terminal Card -->
+        <div class="terminal-card">
+          <div class="terminal-bar">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
             </div>
+            <div class="terminal-tabs">
+              <span class="tab active"><i class="fas fa-code"></i> devops-profile.ts</span>
+              <span class="tab"><i class="fas fa-server"></i> metrics.json</span>
+            </div>
+            <span class="status-online"><i class="fas fa-circle"></i> ONLINE</span>
+          </div>
+          <div class="terminal-body">
             <div class="terminal-content"></div>
           </div>
-          <div class="about-text">
-            <p>
-              DevOps Engineer/Site Reliability Engineer with 3+ years of
-              experience building and maintaining CI/CD pipelines, microservices
-              architectures, and high-availability systems. Expert in
-              infrastructure as code with Terraform, containerization with
-              Docker/Kubernetes, and monitoring tools (ELK, Prometheus,
-              Grafana).
-            </p>
-            <p>
-              Proven track record implementing secure networking solutions and
-              optimizing cloud infrastructure (AWS, Azure, GCP) resulting in 40%
-              cost reductions and 30% performance improvements. Currently
-              pursuing a Master's in Global Software Development at Hochschule
-              Fulda, Germany while focusing on "You build it, you run it" DevOps
-              principles.
-            </p>
-            <div class="social-links">
-              <a
-                href="https://github.com/muneebshoukat111/muneebshoukat111"
-                target="_blank"
-                ><i class="fab fa-github"></i> GitHub</a
-              >
-              <a
-                href="https://www.linkedin.com/in/muneeb-shoukat-024a90171/cc"
-                target="_blank"
-                ><i class="fab fa-linkedin"></i> LinkedIn</a
-              >
-              <a href="mailto:muneebshoukat111@gmail.comc"
-                ><i class="fas fa-envelope"></i> Email</a
-              >
-            </div>
-            <div class="about-stats animate-stagger">
-              <div class="stat-item">
-                <span class="stat-number">3+</span>
-                <span class="stat-text">Years Experience</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">7+</span>
-                <span class="stat-text">Major Projects</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">3+</span>
-                <span class="stat-text">Technical Articles</span>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section animate-on-scroll">
-      <div class="container">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-content animate-stagger">
-          <div class="skill-category">
-            <h3>Cloud Platforms</h3>
-            <div class="skill-items">
-              <div class="skill-item"><i class="fab fa-aws"></i> AWS</div>
-              <div class="skill-item">
-                <i class="fab fa-microsoft"></i> Azure
-              </div>
-              <div class="skill-item"><i class="fab fa-google"></i> GCP</div>
-              <div class="skill-item">
-                <i class="fas fa-cloud"></i> DigitalOcean
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-dharmachakra"></i> OpenShift
-              </div>
-            </div>
+        <!-- Enhanced Bio & Pillars Card -->
+        <div class="bio-card">
+          <div class="bio-header-badge">
+            <i class="fas fa-award"></i> Senior DevOps & SRE Specialist
           </div>
-          <div class="skill-category">
-            <h3>CI/CD & Containers</h3>
-            <div class="skill-items">
-              <div class="skill-item">
-                <i class="fab fa-gitlab"></i> GitLab CI
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-github"></i> GitHub Actions
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-jenkins"></i> Jenkins
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-code-branch"></i> Argo CD
-              </div>
-              <div class="skill-item"><i class="fab fa-docker"></i> Docker</div>
-              <div class="skill-item">
-                <i class="fas fa-dharmachakra"></i> Kubernetes
-              </div>
-              <div class="skill-item"><i class="fas fa-ship"></i> Helm3</div>
-              <div class="skill-item">
-                <i class="fas fa-server"></i> Rancher
-              </div>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Monitoring & IaC</h3>
-            <div class="skill-items">
-              <div class="skill-item">
-                <i class="fas fa-chart-line"></i> ELK Stack
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-fire"></i> Prometheus
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-chart-bar"></i> Grafana
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-code"></i> Terraform
-              </div>
-              <div class="skill-item"><i class="fas fa-cogs"></i> Ansible</div>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Security & Networking</h3>
-            <div class="skill-items">
-              <div class="skill-item"><i class="fas fa-lock"></i> SSL/TLS</div>
-              <div class="skill-item">
-                <i class="fas fa-vault"></i> HashiCorp Vault
-              </div>
-              <div class="skill-item"><i class="fas fa-users-cog"></i> IAM</div>
-              <div class="skill-item">
-                <i class="fas fa-network-wired"></i> DNS
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-shield-alt"></i> Firewalls
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-balance-scale"></i> Load Balancing
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          <h3>Architecting High-Availability Cloud Ecosystems</h3>
+          <p>
+            DevOps Engineer / Site Reliability Engineer with <strong>3+ years of experience</strong> building and maintaining production CI/CD pipelines, microservices architectures, and resilient cloud infrastructures. Expert in Infrastructure as Code with Terraform, container orchestration with Kubernetes/Docker, and enterprise monitoring.
+          </p>
+          <p>
+            Proven track record of optimizing cloud performance across <strong>AWS, Azure, and GCP</strong>, achieving up to <strong>40% cloud cost reductions</strong> and <strong>30% build time improvements</strong> while operating under "You build it, you run it" SRE principles.
+          </p>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience section animate-on-scroll">
-      <div class="container">
-        <h2 class="section-title">Professional Experience</h2>
-        <div class="timeline animate-stagger">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">
-              <h3>January 2022 - Present</h3>
-              <h4>Senior DevOps Engineer / SRE</h4>
-              <h5>Venturenox, New York, NY, US</h5>
-            </div>
-            <div class="timeline-content">
-              <ul>
-                <li>
-                  Designed and maintained CI/CD pipelines using GitHub Actions,
-                  GitLab CI, and Argo CD
-                </li>
-                <li>
-                  Implemented Infrastructure as Code (IaC) solutions using
-                  Terraform and Terragrunt
-                </li>
-                <li>
-                  Deployed and managed containerized microservices on Kubernetes
-                  (EKS, AKS)
-                </li>
-                <li>
-                  Set up comprehensive monitoring solutions with ELK stack,
-                  Prometheus and Grafana
-                </li>
-                <li>
-                  Configured secure networking components including DNS, VPN,
-                  firewalls, and load balancers
-                </li>
-                <li>
-                  Implemented best practices for certificates, SSL/TLS, and
-                  secrets management
-                </li>
-                <li>
-                  Applied SRE principles with root-cause analysis, leading to
-                  40% cost reduction
-                </li>
-                <li>
-                  Automated cloud resource provisioning and scaling for
-                  high-availability systems
-                </li>
-                <li>
-                  Led incident response and post-mortem analysis to improve
-                  system reliability
-                </li>
-                <li>
-                  Mentored junior engineers and conducted DevOps best practices
-                  workshops
-                </li>
-                <li>
-                  Collaborated with cross-functional teams to deliver
-                  cloud-native solutions
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects section animate-on-scroll">
-      <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="aws">AWS</button>
-          <button class="filter-btn" data-filter="azure">Azure</button>
-          <button class="filter-btn" data-filter="gcp">GCP</button>
-        </div>
-        <div class="projects-grid animate-stagger">
-          <!-- Testfuse Project -->
-          <div class="project-card" data-category="gcp">
-            <div class="project-img">
-              <img src="images/testfuse.png" alt="Testfuse" />
-            </div>
-            <div class="project-info">
-              <h3>Testfuse</h3>
-              <p>
-                AI-driven personality insight platform for talent acquisition
-              </p>
-              <div class="project-details">
-                <ul>
-                  <li>
-                    Implemented automated CI/CD pipeline on GCP using GitLab CI
-                    and Argo CD
-                  </li>
-                  <li>
-                    Set up cloud environments using Infrastructure as Code
-                    practices
-                  </li>
-                  <li>
-                    Deployed and managed microservices on Google Kubernetes
-                    Engine (GKE)
-                  </li>
-                  <li>Configured comprehensive monitoring and health checks</li>
-                </ul>
-              </div>
-              <div class="project-tags">
-                <span>GCP</span>
-                <span>GitLab CI</span>
-                <span>Argo CD</span>
-                <!-- <span>GKE</span> -->
-                <span>Terraform</span>
-                <span>Kubernetes</span>
-                <span>Stackdriver</span>
-              </div>
-              <div class="project-links">
-                <a href="https://testfuse.com" target="_blank"
-                  ><i class="fas fa-external-link-alt"></i> Visit Website</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Levvy Project -->
-          <div class="project-card" data-category="aws">
-            <div class="project-img">
-              <img src="images/levvy.png" alt="Levvy" />
-            </div>
-            <div class="project-info">
-              <h3>Levvy</h3>
-              <p>Work management platform supporting outsourced teams</p>
-              <div class="project-details">
-                <ul>
-                  <li>
-                    Designed secure high-availability AWS infrastructure,
-                    reducing expenses by 40%
-                  </li>
-                  <li>
-                    Implemented Amazon EKS for microservices orchestration
-                  </li>
-                  <li>
-                    Set up Apache Airflow for workflow automation and scheduled
-                    jobs
-                  </li>
-                  <li>
-                    Applied "You build it, you run it" philosophy with
-                    independent fault clearance
-                  </li>
-                </ul>
-              </div>
-              <div class="project-tags">
-                <span>AWS</span>
-                <!-- <span>EKS</span> -->
-                <span>Terraform</span>
-                <span>Terragrunt</span>
-                <span>Vault</span>
-                <span>Airflow</span>
-              </div>
-              <div class="project-links">
-                <a href="https://levvy.com" target="_blank"
-                  ><i class="fas fa-external-link-alt"></i> Visit Website</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Crewnetics Project -->
-          <div class="project-card" data-category="azure">
-            <div class="project-img">
-              <img src="images/crewnetics.png" alt="Crewnetics" />
-            </div>
-            <div class="project-info">
-              <h3>Crewnetics</h3>
-              <p>Productivity insights tool with non-intrusive tracking</p>
-              <div class="project-details">
-                <ul>
-                  <li>
-                    Built and deployed microservices infrastructure on Azure
-                    Kubernetes Service (AKS)
-                  </li>
-                  <li>
-                    Implemented comprehensive monitoring with ELK stack,
-                    Prometheus and Grafana
-                  </li>
-                  <li>Set up automated incident response and health checks</li>
-                  <li>
-                    Configured multi-stage environments with secure networking
-                    and CI/CD pipelines
-                  </li>
-                </ul>
-              </div>
-              <div class="project-tags">
-                <span>Azure</span>
-                <!-- <span>AKS</span> -->
-                <span>ELK</span>
-                <span>Prometheus</span>
-                <span>Grafana</span>
-                <span>Terraform</span>
-              </div>
-              <div class="project-links">
-                <a href="https://crewnetics.com" target="_blank"
-                  ><i class="fas fa-external-link-alt"></i> Visit Website</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- GitHub Project Section -->
-          <div class="project-card github-projects" data-category="all">
-            <div class="github-profile-header">
-              <img
-                src="https://github.com/muneebshoukat111.png"
-                alt="Muneeb Shoukat GitHub Avatar"
-                class="github-avatar"
-              />
-
+          <!-- Core Pillars -->
+          <div class="bio-pillars">
+            <div class="pillar-item">
+              <div class="pillar-icon"><i class="fas fa-cubes"></i></div>
               <div>
-                <a
-                  href="https://github.com/muneebshoukat111/muneebshoukat111"
-                  target="_blank"
-                  class="github-username"
-                  >@muneebshoukat111</a
-                >
-                <div class="github-bio">
-                  DevOps Engineer | SRE | Cloud Native Enthusiast
-                </div>
+                <h4>Infrastructure as Code</h4>
+                <p>Automated cloud provisioning with Terraform & CloudFormation.</p>
               </div>
             </div>
-            <div class="github-repos-list">
-              <div class="github-repo">
-                <a
-                  href="https://github.com/muneebshoukat111/muneebshoukat111/kube-status-dashboard"
-                  target="_blank"
-                  class="repo-name"
-                  >Kubernetes Application Status Dashboard</a
-                >
-                <span class="repo-desc">Kubernetes status dashboard</span>
-                <div class="repo-tags">
-                  <span class="repo-lang">Terraform</span>
-                  <span class="repo-lang">Kubernetes</span>
-                  <span class="repo-lang">Helm3</span>
-                  <span class="repo-lang">Docker</span>
-                  <span class="repo-lang">HTML</span>
-                  <span class="repo-lang">CSS</span>
-                  <span class="repo-lang">JavaScript</span>
-                </div>
-              </div>
-              <div class="github-repo">
-                <a
-                  href="https://github.com/muneebshoukat111/muneebshoukat111/terraform_gcp"
-                  target="_blank"
-                  class="repo-name"
-                  >GCP Infrastructure using Terraform</a
-                >
-                <span class="repo-desc"
-                  >GCP Infrastructure as Code with Terraform</span
-                >
-                <div class="repo-tags">
-                  <span class="repo-lang">Terraform</span>
-                  <span class="repo-lang">GCP</span>
-                  <span class="repo-lang">GKE</span>
-                  <span class="repo-lang">GCS</span>
-                  <span class="repo-lang">Cloud Functions</span>
-                  <span class="repo-lang">Cloud Run</span>
-                  <span class="repo-lang">Cloud Build</span>
-                  <span class="repo-lang">Cloud Storage</span>
-                  <span class="repo-lang">Cloud SQL</span>
-                  <span class="repo-lang">Cloud DNS</span>
-                  <span class="repo-lang">Cloud Load Balancing</span>
-                  <span class="repo-lang">Cloud CDN</span>
-                </div>
-              </div>
-              <div class="github-repo">
-                <a
-                  href="https://github.com/muneebshoukat111/muneebshoukat111/terraform_aws"
-                  target="_blank"
-                  class="repo-name"
-                  >AWS Infrastructure using Terraform</a
-                >
-                <span class="repo-desc"
-                  >AWS EKS Infrastructure with Terraform</span
-                >
-                <div class="repo-tags">
-                  <span class="repo-lang">Terraform</span>
-                  <span class="repo-lang">AWS</span>
-                  <span class="repo-lang">EKS</span>
-                  <span class="repo-lang">VPC</span>
-                  <span class="repo-lang">IAM</span>
-                  <span class="repo-lang">ECR</span>
-                  <span class="repo-lang">Subnets</span>
-                  <span class="repo-lang">Route Tables</span>
-                  <span class="repo-lang">Security Groups</span>
-                  <span class="repo-lang">NAT Gateway</span>
-                  <span class="repo-lang">EIP</span>
-                  <span class="repo-lang">EC2</span>
-                  <span class="repo-lang">S3</span>
-                  <span class="repo-lang">CloudFront</span>
-                  <span class="repo-lang">CloudTrail</span>
-                  <span class="repo-lang">CloudWatch</span>
-                </div>
-              </div>
-              <div class="github-repo">
-                <a
-                  href="https://github.com/muneebshoukat111/muneebshoukat111/devops-cicd-pipelines-suite"
-                  target="_blank"
-                  class="repo-name"
-                  >DevOps CICD Pipelines Suite</a
-                >
-                <span class="repo-desc"
-                  >A Project which contains usage of different pipelins
-                  tools!</span
-                >
-                <div class="repo-tags">
-                  <span class="repo-lang">GitHub Actions</span>
-                  <span class="repo-lang">Drone CICD</span>
-                  <span class="repo-lang">Gitlab CICD</span>
-                  <span class="repo-lang">Jenkins</span>
-                  <span class="repo-lang">Azure DevOps</span>
-                </div>
+            <div class="pillar-item">
+              <div class="pillar-icon"><i class="fas fa-sync-alt"></i></div>
+              <div>
+                <h4>GitOps & Orchestration</h4>
+                <p>Zero-downtime Kubernetes deployments using ArgoCD & EKS.</p>
               </div>
             </div>
-            <div class="project-links">
-              <a
-                href="https://github.com/muneebshoukat111/muneebshoukat111?tab=repositories"
-                target="_blank"
-                class="btn btn-primary"
-              >
-                <i class="fab fa-github"></i> View All on GitHub
-              </a>
+          </div>
+
+          <!-- Highlight Statistics Row -->
+          <div class="stats-row">
+            <div class="stat-box">
+              <i class="fas fa-business-time stat-icon"></i>
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Years Experience</span>
             </div>
+            <div class="stat-box">
+              <i class="fas fa-chart-line stat-icon"></i>
+              <span class="stat-num">40%</span>
+              <span class="stat-label">Cloud Cost Saved</span>
+            </div>
+            <div class="stat-box">
+              <i class="fas fa-shield-alt stat-icon"></i>
+              <span class="stat-num">99.99%</span>
+              <span class="stat-label">Uptime Goal</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENHANCED: Technical Expertise Section -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">COMPREHENSIVE TECH STACK</span>
+        <h2 class="section-title">Technical Expertise</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Category 1: Cloud Platforms & IaC -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-badge"><i class="fas fa-cloud"></i></div>
+            <div>
+              <h3>Cloud & Infrastructure</h3>
+              <span class="skill-sub">Multi-Cloud & IaC</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <div class="tag-badge"><i class="fab fa-aws"></i> <span>AWS</span> <small>Expert</small></div>
+            <div class="tag-badge"><i class="fab fa-microsoft"></i> <span>Azure</span> <small>Advanced</small></div>
+            <div class="tag-badge"><i class="fab fa-google"></i> <span>GCP</span> <small>Advanced</small></div>
+            <div class="tag-badge"><i class="fas fa-code"></i> <span>Terraform</span> <small>Expert</small></div>
+            <div class="tag-badge"><i class="fas fa-cubes"></i> <span>CloudFormation</span> <small>Prod</small></div>
+          </div>
+        </div>
+
+        <!-- Category 2: Containers & Kubernetes -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-badge"><i class="fas fa-dharmachakra"></i></div>
+            <div>
+              <h3>Containers & Orchestration</h3>
+              <span class="skill-sub">Cluster Management</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <div class="tag-badge"><i class="fab fa-docker"></i> <span>Docker</span> <small>Expert</small></div>
+            <div class="tag-badge"><i class="fas fa-dharmachakra"></i> <span>Kubernetes</span> <small>Expert</small></div>
+            <div class="tag-badge"><i class="fab fa-aws"></i> <span>AWS EKS</span> <small>Production</small></div>
+            <div class="tag-badge"><i class="fab fa-microsoft"></i> <span>Azure AKS</span> <small>Production</small></div>
+            <div class="tag-badge"><i class="fas fa-ship"></i> <span>Helm 3</span> <small>Advanced</small></div>
+          </div>
+        </div>
+
+        <!-- Category 3: CI/CD Pipelines & Automation -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-badge"><i class="fas fa-code-branch"></i></div>
+            <div>
+              <h3>CI/CD & Automation</h3>
+              <span class="skill-sub">Continuous Integration</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <div class="tag-badge"><i class="fab fa-github"></i> <span>GitHub Actions</span> <small>Expert</small></div>
+            <div class="tag-badge"><i class="fab fa-gitlab"></i> <span>GitLab CI</span> <small>Expert</small></div>
+            <div class="tag-badge"><i class="fab fa-jenkins"></i> <span>Jenkins</span> <small>Advanced</small></div>
+            <div class="tag-badge"><i class="fas fa-sync"></i> <span>ArgoCD</span> <small>GitOps</small></div>
+            <div class="tag-badge"><i class="fas fa-cogs"></i> <span>Ansible</span> <small>Automation</small></div>
+          </div>
+        </div>
+
+        <!-- Category 4: Observability & Security -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-badge"><i class="fas fa-chart-line"></i></div>
+            <div>
+              <h3>Observability & Security</h3>
+              <span class="skill-sub">Monitoring & Vault</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <div class="tag-badge"><i class="fas fa-fire"></i> <span>Prometheus</span> <small>Expert</small></div>
+            <div class="tag-badge"><i class="fas fa-chart-bar"></i> <span>Grafana</span> <small>Expert</small></div>
+            <div class="tag-badge"><i class="fas fa-search"></i> <span>ELK Stack</span> <small>Advanced</small></div>
+            <div class="tag-badge"><i class="fas fa-vault"></i> <span>HashiCorp Vault</span> <small>Security</small></div>
+            <div class="tag-badge"><i class="fas fa-network-wired"></i> <span>VPC & Security</span> <small>Advanced</small></div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Technical Articles Section -->
-    <section id="tech-articles" class="tech-articles section animate-on-scroll">
-      <div class="container">
+  <!-- ENHANCED: Work Experience Showcase -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">PROVEN TRACK RECORD</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+
+      <div class="experience-showcase">
+        <div class="company-card">
+          <!-- Card Header -->
+          <div class="company-header">
+            <div class="company-brand">
+              <div class="company-logo-badge"><i class="fas fa-building"></i></div>
+              <div>
+                <h3>Senior DevOps Engineer</h3>
+                <span class="company-name"><i class="fas fa-briefcase"></i> Venturenox</span>
+              </div>
+            </div>
+            <div class="company-meta">
+              <span class="date-badge"><i class="fas fa-calendar-alt"></i> 2022 — Present</span>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <p class="experience-summary">
+            Leading cloud infrastructure architecture, CI/CD pipeline automation, and system reliability engineering across enterprise client projects.
+          </p>
+
+          <!-- Core Achievements Grid -->
+          <div class="achievements-grid">
+            <div class="achievement-item">
+              <div class="achievement-icon"><i class="fas fa-server"></i></div>
+              <div>
+                <h4>AWS EKS & GitOps Infrastructure</h4>
+                <p>Architected multi-region Kubernetes production clusters using Terraform and automated GitOps continuous deployment with ArgoCD.</p>
+              </div>
+            </div>
+
+            <div class="achievement-item">
+              <div class="achievement-icon"><i class="fas fa-coins"></i></div>
+              <div>
+                <h4>40% Infrastructure Cost Reduction</h4>
+                <p>Optimized cloud resource allocation, right-sized EC2 instances, and implemented auto-scaling policies resulting in 40% cost savings.</p>
+              </div>
+            </div>
+
+            <div class="achievement-item">
+              <div class="achievement-icon"><i class="fas fa-bolt"></i></div>
+              <div>
+                <h4>CI/CD Pipeline Automation</h4>
+                <p>Engineered automated build, test, and release pipelines using GitHub Actions & GitLab CI with embedded container security scans.</p>
+              </div>
+            </div>
+
+            <div class="achievement-item">
+              <div class="achievement-icon"><i class="fas fa-chart-line"></i></div>
+              <div>
+                <h4>Centralized Observability & SRE</h4>
+                <p>Configured real-time metrics monitoring and log aggregation using Prometheus, Grafana, and ELK Stack for high system resilience.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tech Stack Tags Bar -->
+          <div class="experience-tech-bar">
+            <span class="tech-pill">AWS EKS</span>
+            <span class="tech-pill">Terraform</span>
+            <span class="tech-pill">ArgoCD</span>
+            <span class="tech-pill">Docker</span>
+            <span class="tech-pill">Prometheus</span>
+            <span class="tech-pill">Grafana</span>
+            <span class="tech-pill">GitHub Actions</span>
+            <span class="tech-pill">GitLab CI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">PORTFOLIO</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Testfuse -->
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="images/testfuse.png" alt="Testfuse Logo & Platform" class="project-img" />
+          </div>
+          <div class="project-card-body">
+            <h3>Testfuse</h3>
+            <p>Enterprise AI-driven testing & DevOps platform streamlining automated release testing and cloud test orchestration.</p>
+            <ul>
+              <li>Built Kubernetes-native test runner environment on AWS EKS.</li>
+              <li>Automated multi-stage pipelines with GitHub Actions.</li>
+            </ul>
+            <div class="project-tags">
+              <span>AWS</span><span>Kubernetes</span><span>Docker</span><span>Terraform</span>
+            </div>
+            <a href="https://testfuse.com/" target="_blank" class="btn btn-primary btn-sm">
+              <i class="fas fa-external-link-alt"></i> Visit Testfuse
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Levvy -->
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="images/levvy.png" alt="Levvy Logo & Platform" class="project-img" />
+          </div>
+          <div class="project-card-body">
+            <h3>Levvy</h3>
+            <p>FinTech microservices infrastructure built for high performance, compliance, and multi-tenant security.</p>
+            <ul>
+              <li>Configured Terraform infrastructure with HashiCorp Vault.</li>
+              <li>Setup Prometheus & Grafana alerting systems.</li>
+            </ul>
+            <div class="project-tags">
+              <span>AWS</span><span>Terraform</span><span>Vault</span><span>Prometheus</span>
+            </div>
+            <a href="https://levvy.com/" target="_blank" class="btn btn-primary btn-sm">
+              <i class="fas fa-external-link-alt"></i> Visit Levvy
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Crewnetics -->
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="images/crewnetics.png" alt="Crewnetics Logo & Platform" class="project-img" />
+          </div>
+          <div class="project-card-body">
+            <h3>Crewnetics</h3>
+            <p>Workforce management platform leveraging cloud automation, auto-scaling clusters, and high-speed CI/CD.</p>
+            <ul>
+              <li>Architected GCP & GKE auto-scaling container infrastructure.</li>
+              <li>Achieved 30% build time speedup across environments.</li>
+            </ul>
+            <div class="project-tags">
+              <span>GCP</span><span>GKE</span><span>GitLab CI</span><span>Docker</span>
+            </div>
+            <a href="https://crewnetics.com/" target="_blank" class="btn btn-primary btn-sm">
+              <i class="fas fa-external-link-alt"></i> Visit Crewnetics
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Articles Section -->
+  <section id="tech-articles" class="section articles-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">PUBLICATIONS</span>
         <h2 class="section-title">Technical Articles</h2>
-        <div class="articles-grid animate-stagger">
-          <div class="article-card">
-            <div class="article-icon">
-              <i class="fas fa-shield-alt"></i>
-            </div>
-            <div class="article-content">
-              <h3>
-                Automating SSL/TLS with Cert-Manager, Let’s Encrypt, and
-                Wildcard Certificates in Kubernetes
-              </h3>
-              <p class="article-date">Oct 21, 2024</p>
-              <p class="article-desc">
-                Explore how to automate the management of SSL/TLS certificates
-                in Kubernetes using Cert-Manager, focusing on Let’s Encrypt and
-                the use of wildcard certificates. We will also delve into the
-                differences between Issuers and ClusterIssuers.
-              </p>
-              <a
-                href="https://medium.com/@muneebshoukat111/automating-ssl-tls-with-cert-manager-lets-encrypt-and-wildcard-certificates-in-kubernetes-be958a5a4526"
-                class="btn btn-primary mt-4 article-btn"
-                target="_blank"
-                >Read Article <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
+      </div>
 
-          <div class="article-card">
-            <div class="article-icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <div class="article-content">
-              <h3>How to install and configure Zabbix on CentOS 7</h3>
-              <p class="article-date">2022</p>
-              <p class="article-desc">
-                a guide on installing and configuring Zabbix on CentOS system.
-                Zabbix is an open source monitoring software.You can use Zabbix
-                to monitor your servers, cloud services, virtual machines as
-                many more.
-              </p>
-              <a
-                href="https://logicdevops.blogspot.com/"
-                class="btn btn-primary mt-4 article-btn"
-                target="_blank"
-                >Read Article <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
+      <div class="articles-grid">
+        <div class="article-card">
+          <div class="article-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="article-body">
+            <span class="article-date">Medium • Oct 21, 2024</span>
+            <h3>Automating SSL/TLS with Cert-Manager, Let’s Encrypt, and Wildcard Certificates in Kubernetes</h3>
+            <p>Explore how to automate the management of SSL/TLS certificates in Kubernetes using Cert-Manager, focusing on Let’s Encrypt and wildcard certificates.</p>
+            <a href="https://medium.com/@muneebshoukat111/automating-ssl-tls-with-cert-manager-lets-encrypt-and-wildcard-certificates-in-kubernetes-be958a5a4526" target="_blank" class="btn btn-primary btn-sm">
+              Read Article <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
+        </div>
 
-          <div class="article-card">
-            <div class="article-icon">
-              <i class="fas fa-dharmachakra"></i>
-            </div>
-            <div class="article-content">
-              <h3>Ensuring High Availability and Resilience in Amazon EKS</h3>
-              <p class="article-date">2022</p>
-              <p class="article-desc">
-                Best practices and architectural patterns for building resilient
-                Kubernetes clusters on Amazon EKS that can withstand failures
-                and provide uninterrupted service.
-              </p>
-              <a
-                href="https://venturenox.com/blog/amazon-eks-2-high-availability-and-resilience/"
-                class="btn btn-primary mt-4 article-btn"
-                target="_blank"
-                >Read Article <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
+        <div class="article-card">
+          <div class="article-icon"><i class="fas fa-code"></i></div>
+          <div class="article-body">
+            <span class="article-date">Logic DevOps • 2022</span>
+            <h3>How to install and configure Zabbix on CentOS 7</h3>
+            <p>A comprehensive guide on installing and configuring Zabbix open-source monitoring software on CentOS to monitor servers, cloud services, and virtual machines.</p>
+            <a href="https://logicdevops.blogspot.com/" target="_blank" class="btn btn-primary btn-sm">
+              Read Article <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-icon"><i class="fas fa-dharmachakra"></i></div>
+          <div class="article-body">
+            <span class="article-date">Venturenox Blog • 2022</span>
+            <h3>Ensuring High Availability and Resilience in Amazon EKS</h3>
+            <p>Best practices and architectural patterns for building resilient Kubernetes clusters on Amazon EKS that withstand failures and provide uninterrupted service.</p>
+            <a href="https://venturenox.com/blog/amazon-eks-2-high-availability-and-resilience/" target="_blank" class="btn btn-primary btn-sm">
+              Read Article <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education section animate-on-scroll">
-      <div class="container">
+  <!-- Education Section -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ACADEMICS</span>
         <h2 class="section-title">Education</h2>
-        <div class="education-timeline animate-stagger">
-          <div class="education-item">
-            <div class="education-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <div class="education-content">
-              <h3>Bachelor's (Hons) in Computer Science</h3>
-              <p class="edu-institution">Lahore Leads University</p>
-              <p class="edu-date">Graduated 2022</p>
-            </div>
+      </div>
+
+      <div class="education-grid">
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-details">
+            <h3>Bachelor's (Hons) in Computer Science</h3>
+            <span class="edu-school">Lahore Leads University</span>
+            <span class="edu-date">Graduated 2022</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section animate-on-scroll">
-      <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <p
-          class="contact-intro text-center mb-8"
-          style="
-            font-size: 1.15rem;
-            color: #555;
-            max-width: 600px;
-            margin: 0 auto 2.5rem auto;
-          "
-        >
-          Let's connect! I'm always open to new opportunities, collaborations,
-          and interesting conversations.
-        </p>
-        <div class="contact-content">
-          <div class="contact-info animate-stagger">
-            <a
-              href="mailto:muneebshoukat111@gmail.com"
-              class="contact-item contact-card"
-              target="_blank"
-            >
-              <i class="fas fa-envelope"></i>
-              <h3>Email</h3>
-              <p>muneebshoukat111@gmail.com</p>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/muneeb-shoukat-024a90171/"
-              class="contact-item contact-card"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin"></i>
-              <h3>LinkedIn</h3>
-              <p>Connect on LinkedIn</p>
-            </a>
-            <a
-              href="https://github.com/muneebshoukat111/muneebshoukat111"
-              class="contact-item contact-card"
-              target="_blank"
-            >
-              <i class="fab fa-github"></i>
-              <h3>GitHub</h3>
-              <p>Follow on GitHub</p>
-            </a>
-            <a
-              href="tel:+4915141466701"
-              class="contact-item contact-card"
-              target="_blank"
-            >
-              <i class="fas fa-phone"></i>
-              <h3>Phone</h3>
-              <p>+92-3005373672</p>
-            </a>
-          </div>
+  <!-- Contact & Footer Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-box">
+        <h2>Get In Touch</h2>
+        <p>Let's connect! I'm always open to new opportunities, collaborations, and interesting conversations.</p>
+
+        <div class="contact-links-grid">
+          <a href="mailto:muneebshoukat111@gmail.com" class="contact-pill" target="_blank">
+            <i class="fas fa-envelope"></i>
+            <span>muneebshoukat111@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/muneeb-shoukat-024a90171/" class="contact-pill" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn Profile</span>
+          </a>
+          <a href="https://github.com/muneebshoukat111/muneebshoukat111" class="contact-pill" target="_blank">
+            <i class="fab fa-github"></i>
+            <span>GitHub Profile</span>
+          </a>
+          <a href="tel:+923005373672" class="contact-pill" target="_blank">
+            <i class="fas fa-phone"></i>
+            <span>+92-3005373672</span>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer enhanced-footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-main">
-            <p>&copy; 2025 Muneeb Shoukat. All Rights Reserved.</p>
-          </div>
-          <div class="footer-social">
-            <a href="#" class="back-to-top" title="Back to Top"
-              ><i class="fas fa-arrow-up"></i
-            ></a>
-            <a
-              href="https://github.com/muneebshoukat111/muneebshoukat111"
-              target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/muneeb-shoukat-024a90171/"
-              target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="mailto:muneebshoukat111@gmail.com"
-              ><i class="fas fa-envelope"></i
-            ></a>
-          </div>
-        </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2025 Muneeb Shoukat. All Rights Reserved.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/muneebshoukat111/muneebshoukat111" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/muneeb-shoukat-024a90171/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:muneebshoukat111@gmail.com"><i class="fas fa-envelope"></i></a>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
