@@ -102,11 +102,11 @@ function initParticles() {
   if (!canvas) return;
   const ctx = canvas.getContext("2d");
   let w = (canvas.width = window.innerWidth);
-  let h = (canvas.height = document.querySelector(".hero").offsetHeight || 600);
+  let h = (canvas.height = document.querySelector(".hero-section") ? document.querySelector(".hero-section").offsetHeight : 600);
 
   function resize() {
     w = canvas.width = window.innerWidth;
-    const heroEl = document.querySelector(".hero");
+    const heroEl = document.querySelector(".hero-section");
     if (heroEl) h = canvas.height = heroEl.offsetHeight;
   }
   window.addEventListener("resize", resize);

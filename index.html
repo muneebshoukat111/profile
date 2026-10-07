@@ -3,25 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muneeb Shoukat - DevOps Engineer & SRE</title>
+  <title>Muneeb Shoukat | Senior DevOps Engineer & SRE</title>
   <link rel="icon" href="images/profile.jpeg" type="image/png" />
 
-  <!-- Fonts & Icons -->
+  <!-- Google Fonts & Font Awesome Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-  <!-- Custom Styles -->
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Ambient Glow Canvas Mesh -->
+  <div class="glow-mesh glow-1"></div>
+  <div class="glow-mesh glow-2"></div>
+
+  <!-- Floating Glass Navbar -->
   <header class="navbar">
     <div class="container navbar-container">
       <a href="#" class="logo">
         <div class="logo-icon"><i class="fas fa-terminal"></i></div>
-        <span class="logo-text">Muneeb Shoukat</span>
+        <span class="logo-text">Muneeb<span class="logo-accent">.devops</span></span>
       </a>
 
       <nav class="nav-menu">
@@ -30,14 +33,14 @@
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#experience" class="nav-link">Experience</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#tech-articles" class="nav-link">Articles</a></li>
+          <li><a href="#articles" class="nav-link">Articles</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
-        <a href="MuneebulRehman.pdf" class="btn btn-primary" download>
-          <i class="fas fa-download"></i> Resume
+        <a href="MuneebulRehman.pdf" class="btn btn-primary btn-nav" download>
+          <i class="fas fa-file-download"></i> Resume
         </a>
         <button class="burger" aria-label="Toggle navigation">
           <span></span><span></span><span></span>
@@ -46,33 +49,32 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- World-Class Hero Section -->
   <section id="hero" class="hero-section">
     <canvas id="hero-particles"></canvas>
     <div class="container hero-container">
       
-      <!-- Hero Left Content -->
+      <!-- Hero Left Headline & Action -->
       <div class="hero-text">
-        <div class="badge-pill">
+        <div class="status-pill">
           <span class="pulse-dot"></span>
-          DevOps Engineer & Site Reliability Expert
+          Senior DevOps Engineer & Site Reliability Expert
         </div>
         
         <h1 class="hero-title">
-          <span class="typing-text"></span><br />
-          <span class="gradient-text">Cloud-Native Reality</span>
+          Architecting <span class="gradient-text">Cloud-Native</span> Systems & Resilient Infrastructure
         </h1>
         
         <p class="hero-description">
-          Architecting scalable solutions where <strong>reliability meets innovation</strong>. Embracing the philosophy of <strong>"Engineer it, Own it, Excel at it"</strong> to build robust cloud infrastructures that drive business success.
+          Specializing in <strong>AWS, Kubernetes, Terraform IaC, and SRE Observability</strong>. Empowering enterprises with <strong>40% cloud cost savings</strong>, zero-downtime deployments, and high-performance automated CI/CD pipelines.
         </p>
 
         <div class="hero-cta">
           <a href="#projects" class="btn btn-primary btn-lg">
-            <i class="fas fa-rocket"></i> Explore My Work
+            <i class="fas fa-rocket"></i> Explore Work
           </a>
           <a href="#contact" class="btn btn-secondary btn-lg">
-            <i class="fas fa-paper-plane"></i> Let's Connect
+            <i class="fas fa-paper-plane"></i> Get in Touch
           </a>
         </div>
 
@@ -86,7 +88,7 @@
         </div>
       </div>
 
-      <!-- Hero Right Clean Profile Image -->
+      <!-- Hero Right Profile Card Showcase -->
       <div class="hero-visual">
         <div class="portrait-card">
           <div class="portrait-ring">
@@ -98,16 +100,16 @@
     </div>
   </section>
 
-  <!-- ENHANCED: About Section & Interactive Console -->
+  <!-- Interactive Terminal & Bio Grid -->
   <section id="about" class="section about-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">BACKGROUND & PHILOSOPHY</span>
-        <h2 class="section-title">About Me</h2>
+        <span class="section-tag"><i class="fas fa-user-gear"></i> ABOUT & PHILOSOPHY</span>
+        <h2 class="section-title">Engineering Excellence</h2>
       </div>
 
       <div class="about-grid">
-        <!-- Interactive Terminal Card -->
+        <!-- Interactive Terminal Console -->
         <div class="terminal-card">
           <div class="terminal-bar">
             <div class="terminal-dots">
@@ -116,22 +118,22 @@
               <span class="dot dot-green"></span>
             </div>
             <div class="terminal-tabs">
-              <span class="tab active"><i class="fas fa-code"></i> devops-profile.ts</span>
-              <span class="tab"><i class="fas fa-server"></i> metrics.json</span>
+              <span class="tab active"><i class="fas fa-code"></i> sre-profile.ts</span>
+              <span class="tab"><i class="fas fa-layer-group"></i> infrastructure.tf</span>
             </div>
-            <span class="status-online"><i class="fas fa-circle"></i> ONLINE</span>
+            <span class="status-online"><i class="fas fa-circle"></i> ACTIVE</span>
           </div>
           <div class="terminal-body">
             <div class="terminal-content"></div>
           </div>
         </div>
 
-        <!-- Enhanced Bio & Pillars Card -->
+        <!-- Bio & Pillars Card -->
         <div class="bio-card">
           <div class="bio-header-badge">
-            <i class="fas fa-award"></i> Senior DevOps & SRE Specialist
+            <i class="fas fa-shield-halved"></i> Cloud Infrastructure Architect
           </div>
-          <h3>Architecting High-Availability Cloud Ecosystems</h3>
+          <h3>Building Resilient & Auto-Scaling Cloud Ecosystems</h3>
           <p>
             DevOps Engineer / Site Reliability Engineer with <strong>3+ years of experience</strong> building and maintaining production CI/CD pipelines, microservices architectures, and resilient cloud infrastructures. Expert in Infrastructure as Code with Terraform, container orchestration with Kubernetes/Docker, and enterprise monitoring.
           </p>
@@ -139,35 +141,35 @@
             Proven track record of optimizing cloud performance across <strong>AWS, Azure, and GCP</strong>, achieving up to <strong>40% cloud cost reductions</strong> and <strong>30% build time improvements</strong> while operating under "You build it, you run it" SRE principles.
           </p>
 
-          <!-- Core Pillars -->
+          <!-- Core Pillars Grid -->
           <div class="bio-pillars">
             <div class="pillar-item">
               <div class="pillar-icon"><i class="fas fa-cubes"></i></div>
               <div>
                 <h4>Infrastructure as Code</h4>
-                <p>Automated cloud provisioning with Terraform & CloudFormation.</p>
+                <p>Automated provisioning with Terraform & CloudFormation.</p>
               </div>
             </div>
             <div class="pillar-item">
               <div class="pillar-icon"><i class="fas fa-sync-alt"></i></div>
               <div>
-                <h4>GitOps & Orchestration</h4>
-                <p>Zero-downtime Kubernetes deployments using ArgoCD & EKS.</p>
+                <h4>GitOps & Kubernetes</h4>
+                <p>Zero-downtime EKS deployments using ArgoCD & Helm.</p>
               </div>
             </div>
           </div>
 
-          <!-- Highlight Statistics Row -->
+          <!-- Highlight Metric Counters -->
           <div class="stats-row">
             <div class="stat-box">
               <i class="fas fa-business-time stat-icon"></i>
               <span class="stat-num">3+</span>
-              <span class="stat-label">Years Experience</span>
+              <span class="stat-label">Years Exp</span>
             </div>
             <div class="stat-box">
               <i class="fas fa-chart-line stat-icon"></i>
               <span class="stat-num">40%</span>
-              <span class="stat-label">Cloud Cost Saved</span>
+              <span class="stat-label">Cost Reduction</span>
             </div>
             <div class="stat-box">
               <i class="fas fa-shield-alt stat-icon"></i>
@@ -181,16 +183,16 @@
     </div>
   </section>
 
-  <!-- ENHANCED: Technical Expertise Section -->
+  <!-- Technical Stack Ecosystem -->
   <section id="skills" class="section skills-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">COMPREHENSIVE TECH STACK</span>
+        <span class="section-tag"><i class="fas fa-microchip"></i> COMPREHENSIVE TECH ECOSYSTEM</span>
         <h2 class="section-title">Technical Expertise</h2>
       </div>
 
       <div class="skills-grid">
-        <!-- Category 1: Cloud Platforms & IaC -->
+        <!-- Cloud Platforms & IaC -->
         <div class="skill-card">
           <div class="skill-card-top">
             <div class="skill-icon-badge"><i class="fas fa-cloud"></i></div>
@@ -208,12 +210,12 @@
           </div>
         </div>
 
-        <!-- Category 2: Containers & Kubernetes -->
+        <!-- Containers & Orchestration -->
         <div class="skill-card">
           <div class="skill-card-top">
             <div class="skill-icon-badge"><i class="fas fa-dharmachakra"></i></div>
             <div>
-              <h3>Containers & Orchestration</h3>
+              <h3>Containers & Kubernetes</h3>
               <span class="skill-sub">Cluster Management</span>
             </div>
           </div>
@@ -226,7 +228,7 @@
           </div>
         </div>
 
-        <!-- Category 3: CI/CD Pipelines & Automation -->
+        <!-- CI/CD Pipelines & Automation -->
         <div class="skill-card">
           <div class="skill-card-top">
             <div class="skill-icon-badge"><i class="fas fa-code-branch"></i></div>
@@ -244,7 +246,7 @@
           </div>
         </div>
 
-        <!-- Category 4: Observability & Security -->
+        <!-- Observability & Security -->
         <div class="skill-card">
           <div class="skill-card-top">
             <div class="skill-icon-badge"><i class="fas fa-chart-line"></i></div>
@@ -265,11 +267,11 @@
     </div>
   </section>
 
-  <!-- ENHANCED: Work Experience Showcase -->
+  <!-- Work Experience Showcase -->
   <section id="experience" class="section experience-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">PROVEN TRACK RECORD</span>
+        <span class="section-tag"><i class="fas fa-briefcase"></i> CAREER TRACK RECORD</span>
         <h2 class="section-title">Work Experience</h2>
       </div>
 
@@ -281,7 +283,7 @@
               <div class="company-logo-badge"><i class="fas fa-building"></i></div>
               <div>
                 <h3>Senior DevOps Engineer</h3>
-                <span class="company-name"><i class="fas fa-briefcase"></i> Venturenox</span>
+                <span class="company-name"><i class="fas fa-certificate"></i> Venturenox</span>
               </div>
             </div>
             <div class="company-meta">
@@ -291,7 +293,7 @@
 
           <!-- Description -->
           <p class="experience-summary">
-            Leading cloud infrastructure architecture, CI/CD pipeline automation, and system reliability engineering across enterprise client projects.
+            Architecting cloud infrastructure, CI/CD pipeline automation, and system reliability engineering for high-traffic enterprise applications.
           </p>
 
           <!-- Core Achievements Grid -->
@@ -329,7 +331,7 @@
             </div>
           </div>
 
-          <!-- Tech Stack Tags Bar -->
+          <!-- Tech Stack Bar -->
           <div class="experience-tech-bar">
             <span class="tech-pill">AWS EKS</span>
             <span class="tech-pill">Terraform</span>
@@ -345,11 +347,11 @@
     </div>
   </section>
 
-  <!-- Featured Projects Section -->
+  <!-- Bento Grid Projects Section -->
   <section id="projects" class="section projects-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">PORTFOLIO</span>
+        <span class="section-tag"><i class="fas fa-diagram-project"></i> PRODUCTION PORTFOLIO</span>
         <h2 class="section-title">Featured Projects</h2>
       </div>
 
@@ -423,10 +425,10 @@
   </section>
 
   <!-- Technical Articles Section -->
-  <section id="tech-articles" class="section articles-section">
+  <section id="articles" class="section articles-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">PUBLICATIONS</span>
+        <span class="section-tag"><i class="fas fa-newspaper"></i> THOUGHT LEADERSHIP</span>
         <h2 class="section-title">Technical Articles</h2>
       </div>
 
@@ -474,7 +476,7 @@
   <section id="education" class="section education-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">ACADEMICS</span>
+        <span class="section-tag"><i class="fas fa-graduation-cap"></i> ACADEMIC BACKGROUND</span>
         <h2 class="section-title">Education</h2>
       </div>
 
@@ -491,12 +493,12 @@
     </div>
   </section>
 
-  <!-- Contact & Footer Section -->
+  <!-- Contact & Floating Footer -->
   <section id="contact" class="section contact-section">
     <div class="container">
       <div class="contact-box">
-        <h2>Get In Touch</h2>
-        <p>Let's connect! I'm always open to new opportunities, collaborations, and interesting conversations.</p>
+        <h2>Let's Build Something High-Availability Together</h2>
+        <p>I'm always open to discussing cloud architecture, DevOps automation, SRE opportunities, or technical inquiries.</p>
 
         <div class="contact-links-grid">
           <a href="mailto:muneebshoukat111@gmail.com" class="contact-pill" target="_blank">
